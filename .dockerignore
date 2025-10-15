@@ -1,0 +1,19 @@
+# Root ignores
+.git
+.gitignore
+node_modules
+**/node_modules
+**/.env
+*.env
+**/.cache
+**/dist
+**/build
+Dockerfile
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Supabase local
+supabase/.branches/
+supabase/.temp/
