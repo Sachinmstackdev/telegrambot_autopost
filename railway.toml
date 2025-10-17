@@ -1,0 +1,12 @@
+[build]
+# Force Railway to build using the Dockerfile at the repo root.
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+buildContext = "."
+
+[deploy]
+# This bot is a worker; it doesn't expose a port.
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
+
+
